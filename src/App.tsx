@@ -1,5 +1,6 @@
 import { CSSProperties } from 'react';
-import './App.css';
+import { JSX } from 'react';
+import { HelloWord, HelloWord2 } from './intro/helloWWord';
 
 export function App(): JSX.Element | null {
     const h1: CSSProperties = {
@@ -8,8 +9,10 @@ export function App(): JSX.Element | null {
 
     return (
         <div>
-            <span style={{color: 'green', fontWeight: 'bold'}}>Lorem ipsum dolor sit.</span>
+            <span style={{ color: 'green', fontWeight: 'bold' }}>Lorem ipsum dolor sit.</span>
             <div style={h1}>H1</div>
+            <HelloWord/>
+            <HelloWord2/>
         </div>
     )
 };
