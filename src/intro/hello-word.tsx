@@ -1,7 +1,7 @@
 import { JSX } from "react";
 
-export function HelloWord(): JSX.Element {
-    return <div>Hello Word</div>;
+export function HelloWord(): JSX.Element | null{
+        return <div>Hello Word</div>;
 }
 
 export const HelloWord2 = (): JSX.Element => {

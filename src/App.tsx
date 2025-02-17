@@ -1,19 +1,17 @@
-import { CSSProperties } from 'react';
 import { JSX } from 'react';
-import { HelloWord, HelloWord2 } from './intro/helloWWord';
+import { HelloWord, HelloWord2 } from './intro/hello-word';
+import { Basic } from './intro/jsxBasic.tsx';
 
-export function App(): JSX.Element | null {
-    const h1: CSSProperties = {
-        color: 'red'
-    }
+export default function App(): JSX.Element | null {
 
     return (
-        <div>
-            <span style={{ color: 'green', fontWeight: 'bold' }}>Lorem ipsum dolor sit.</span>
-            <div style={h1}>H1</div>
-            <HelloWord/>
-            <HelloWord2/>
-        </div>
+        <>
+            <Basic />
+            <HelloWord />
+            <HelloWord2 />
+        </>
     )
 };
+
+
 
